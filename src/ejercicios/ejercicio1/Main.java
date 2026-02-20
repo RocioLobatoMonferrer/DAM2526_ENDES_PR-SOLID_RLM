@@ -2,13 +2,13 @@ package ejercicios.ejercicio1;
 
 public class Main {
 	public static void main(String[] args) {
+// Principio SRP
+		Empleado empleado = new Empleado(1, "Juan Pérez", "Desarrollador");
+		EmpleadoRepositorio repo = new EmpleadoRepositorio();
+		EmpleadoInforme informe = new EmpleadoInforme();
 
-		Empleado empleado;
-
-		empleado = new Empleado(1, "Juan Pérez", "Desarrollador");
-
-		empleado.guardarEmpleado();
-		empleado.generarInformeEmpleado();
-		empleado.eliminarEmpleado();
+		repo.guardarEmpleado(empleado);
+		informe.generarInformeEmpleado(empleado);
+		repo.eliminarEmpleado(empleado);
 	}
 }

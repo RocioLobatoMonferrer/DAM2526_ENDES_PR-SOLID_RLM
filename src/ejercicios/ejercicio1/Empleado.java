@@ -12,17 +12,16 @@ public class Empleado {
 		this.puesto = puesto;
 	}
 
-	public void guardarEmpleado() {
-		System.out.println("Conectando a la base de datos...");
-		System.out.println("Empleado " + nombre + " guardado");
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void eliminarEmpleado() {
-		System.out.println("Conectando a la base de datos...");
-		System.out.println("Empleado " + nombre + " eliminado");
+	public int getId() {
+		return id;
 	}
 
-	public void generarInformeEmpleado() {
-		System.out.println("Generando informe para " + nombre);
+	public String getPuesto() {
+		return puesto;
 	}
+
 }

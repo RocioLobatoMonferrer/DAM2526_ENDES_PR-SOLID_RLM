@@ -1,7 +1,7 @@
 package ejercicios.ejercicio2;
 
 public class MainPago {
-
+// Principio DIP
 	public static void main(String[] args) {
 
 		PagoService servicio1 = new PagoService(new PayPal());

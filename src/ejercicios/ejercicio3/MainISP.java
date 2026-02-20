@@ -1,7 +1,7 @@
 package ejercicios.ejercicio3;
 
 public class MainISP {
-
+// Principio ISP
 	public static void main(String[] args) {
 
 		MaquinaOficina basica = new ImpresoraBasica();
